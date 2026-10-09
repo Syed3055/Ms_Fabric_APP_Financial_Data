@@ -1,0 +1,331 @@
+table Financial_Data
+	lineageTag: 973fa7bc-d0f6-4c16-84e4-3396f2786157
+	sourceLineageTag: [dbo].[Financial_Data]
+
+	column Segment
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 67093324-e955-45a9-b0ba-0ef6a1ad9c67
+		sourceLineageTag: Segment
+		summarizeBy: none
+		sourceColumn: Segment
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 1fd073ff-107a-4526-8aec-9d3c06faa2ce
+		sourceLineageTag: Country
+		summarizeBy: none
+		sourceColumn: Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column Product
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 8850686f-47b9-4b83-a992-71466f642465
+		sourceLineageTag: Product
+		summarizeBy: none
+		sourceColumn: Product
+
+		annotation SummarizationSetBy = Automatic
+
+	column Product_currency
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: c9263aab-f1f9-40b3-ae5f-e31b758e0582
+		sourceLineageTag: Product_currency
+		summarizeBy: none
+		sourceColumn: Product_currency
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Discount Band'
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 03443ad3-afea-43ec-b33b-d18b79b5bf61
+		sourceLineageTag: Discount Band
+		summarizeBy: none
+		sourceColumn: Discount Band
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Discount Band_currency'
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 3b8c7619-43c1-49a1-a705-28234f6f22d5
+		sourceLineageTag: Discount Band_currency
+		summarizeBy: none
+		sourceColumn: Discount Band_currency
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Units Sold'
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 4b77c002-c418-4044-85cd-4ac7c4a1155f
+		sourceLineageTag: Units Sold
+		summarizeBy: sum
+		sourceColumn: Units Sold
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Manufacturing Price'
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 111263b0-cdc1-4471-a81b-01b47c9be202
+		sourceLineageTag: Manufacturing Price
+		summarizeBy: sum
+		sourceColumn: Manufacturing Price
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Manufacturing Price_currency'
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 49691690-60bd-47dc-b35e-8c251bff3471
+		sourceLineageTag: Manufacturing Price_currency
+		summarizeBy: none
+		sourceColumn: Manufacturing Price_currency
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sale Price'
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 232048db-ca60-496a-9368-434fb108e3cc
+		sourceLineageTag: Sale Price
+		summarizeBy: sum
+		sourceColumn: Sale Price
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sale Price_currency'
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 62a02fc8-e147-4ac9-be14-9e03a9804edb
+		sourceLineageTag: Sale Price_currency
+		summarizeBy: none
+		sourceColumn: Sale Price_currency
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Gross Sales'
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 5c3610d3-7e9a-46ea-86b6-885916fcaef3
+		sourceLineageTag: Gross Sales
+		summarizeBy: sum
+		sourceColumn: Gross Sales
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Gross Sales_currency'
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 9ab723be-7991-4f72-a2b3-fac571aaf6b1
+		sourceLineageTag: Gross Sales_currency
+		summarizeBy: none
+		sourceColumn: Gross Sales_currency
+
+		annotation SummarizationSetBy = Automatic
+
+	column Discounts
+		dataType: double
+		sourceProviderType: float
+		lineageTag: ab719f4b-e6dd-474a-9471-401d3935e45c
+		sourceLineageTag: Discounts
+		summarizeBy: sum
+		sourceColumn: Discounts
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Discounts_currency
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 7b324a08-3be8-42ff-b92c-012cb47717c2
+		sourceLineageTag: Discounts_currency
+		summarizeBy: none
+		sourceColumn: Discounts_currency
+
+		annotation SummarizationSetBy = Automatic
+
+	column ' Sales'
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 31e0982e-3df3-4088-9571-c65f75c34ab3
+		sourceLineageTag: " Sales"
+		summarizeBy: sum
+		sourceColumn: " Sales"
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ' Sales_currency'
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 961d7665-784d-404c-9218-de73be4dbb0f
+		sourceLineageTag: " Sales_currency"
+		summarizeBy: none
+		sourceColumn: " Sales_currency"
+
+		annotation SummarizationSetBy = Automatic
+
+	column COGS
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 6b4c4e53-8a4e-4f2d-ad34-22df21934f77
+		sourceLineageTag: COGS
+		summarizeBy: sum
+		sourceColumn: COGS
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column COGS_currency
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 3fa99c8d-b633-4e1b-a7f7-093395cec6e3
+		sourceLineageTag: COGS_currency
+		summarizeBy: none
+		sourceColumn: COGS_currency
+
+		annotation SummarizationSetBy = Automatic
+
+	column Profit
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 50aedb0e-a40c-4341-9de8-62c12a73eaeb
+		sourceLineageTag: Profit
+		summarizeBy: sum
+		sourceColumn: Profit
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Profit_currency
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 39b6dc3d-49df-4253-8a43-19d9147df2f2
+		sourceLineageTag: Profit_currency
+		summarizeBy: none
+		sourceColumn: Profit_currency
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 0168df86-2220-4482-a7d4-4c58b4e87c80
+		sourceLineageTag: Date
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Number'
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 90d732f7-b41c-4728-89d3-db7e53ac1a12
+		sourceLineageTag: Month Number
+		summarizeBy: sum
+		sourceColumn: Month Number
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Name'
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 2356a381-3124-4a0f-85ff-712f9c71bf0c
+		sourceLineageTag: Month Name
+		summarizeBy: none
+		sourceColumn: Month Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Name_currency'
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: c1c0768c-758e-43f6-93bd-d9f8883f9c80
+		sourceLineageTag: Month Name_currency
+		summarizeBy: none
+		sourceColumn: Month Name_currency
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: c3b6416d-8ec7-424b-92b6-217dd0de2d0c
+		sourceLineageTag: Year
+		summarizeBy: sum
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column __filepath__
+		dataType: string
+		sourceProviderType: varchar(2048)
+		lineageTag: 01d4c937-ee4a-45c8-9369-57a868a1237b
+		sourceLineageTag: __filepath__
+		summarizeBy: none
+		sourceColumn: __filepath__
+
+		annotation SummarizationSetBy = Automatic
+
+	column __sheetname__
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 2b834ecf-bb69-4bbb-bb64-3b3e8700d746
+		sourceLineageTag: __sheetname__
+		summarizeBy: none
+		sourceColumn: __sheetname__
+
+		annotation SummarizationSetBy = Automatic
+
+	column __corrupt__
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 2b0ffdb9-328f-48c2-a7cf-755574bf26b7
+		sourceLineageTag: __corrupt__
+		summarizeBy: none
+		sourceColumn: __corrupt__
+
+		annotation SummarizationSetBy = Automatic
+
+	column __ingestion_timestamp__
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 2813ad11-af96-4eb5-84ef-5f01cab2f431
+		sourceLineageTag: __ingestion_timestamp__
+		summarizeBy: none
+		sourceColumn: __ingestion_timestamp__
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Financial_Data = entity
+		mode: directLake
+		source
+			entityName: Financial_Data
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+
